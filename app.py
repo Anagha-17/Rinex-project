@@ -6,3 +6,4 @@ ip=st.text_input('ENTER THE SONG')
 op= model.predict([ip])
 if st.button('PREDICT'):
  st.title(op[0])
+   
