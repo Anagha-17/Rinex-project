@@ -1,2 +1,2 @@
-# spamham123
-webapp to print if the entered text is spam or ham
+# RINEX PROJECT
+webapp to print if the entered song is a rap or not
