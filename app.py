@@ -1,10 +1,9 @@
 import streamlit as st
 import joblib
-model = joblib.load('train')
-st.title('song type')            
-ip = st.text_input('Enter your song')       
-op = model.predict([ip])           
-if st.button('Predict'):   
-  st.title(op[0]) 
-
-         
+model =joblib.load('train')
+st.title('PREDICT THE TYPE')
+ip=st.text_input('ENTER THE SONG')
+op= model.predict([ip])
+if st.button('PREDICT'):
+ st.title(op[0])
+ 
