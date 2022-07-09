@@ -1,9 +1,16 @@
-import streamlit as st
-import joblib
-model =joblib.load('train')
-st.title('PREDICT THE TYPE')
-ip=st.text_input('ENTER THE SONG')
-op= model.predict([ip])
+import streamlit as st 
+import joblib 
+
+#load the joblib model 
+model_nb = joblib.load('train')
+
+#user input 
+st.title("PREDICT THE TYPE")
+ip = st.text_input("Enter your SONG:")
+
+#predict if the entered message is spam or ham 
+op = model_nb.predict([ip])
 if st.button('PREDICT'):
- st.title(op[0])
- 
+  st.title(op[0])  #prints the output as spam or ham  
+
+  
